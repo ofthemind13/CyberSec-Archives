@@ -1,6 +1,7 @@
 .bg-img {
     /* The image used */
-    background-image: url("motherboard.jpg");
+    background-image: url(https://github.com/ofthemind13/test/blob/main/mirza-mustofa-RPnXl6Rpvk0-unsplash.jpg);
+    background-color: black;
     min-height: 380px;
     /* Center and scale the image nicely */
     background-position: center;
