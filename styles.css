@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+body {
+    background-color: black;
+}
+
 .bg-img {
     /* The image used */
-    background-image: url("https://i.postimg.cc/jdVWSpCb/anonymous-2821433-1920.jpg");
+    /*background-image: url("https://i.postimg.cc/jdVWSpCb/anonymous-2821433-1920.jpg");*/
     background-color: black;
-    min-height: 380px;
+    /*min-height: 380px;*/
+    height: 10em;
     /* Center and scale the image nicely */
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: contain;*/
+    background-position-y: 170%;
     /* Needed to position the navbar */
     position: relative;
 }
@@ -15,9 +22,15 @@
 /* Position the navbar container inside the image */
 
 .container {
+    background-image: url("https://i.postimg.cc/jdVWSpCb/anonymous-2821433-1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 48%;
     position: absolute;
     margin: 20px;
-    width: auto;
+    width: 97%;
+    height: 80px;
+    z-index: 1000;
 }
 
 
@@ -25,7 +38,6 @@
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
 }
 
 
@@ -38,6 +50,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: Kanit;
 }
 
 .topnav a:hover {
@@ -45,6 +58,69 @@
     color: black;
 }
 
-image {
-    url('')
+.Welcome-text h1 {
+    font-family: Kanit;
+    color: chartreuse;
+    margin-left: 20px;
+    font-size: 3em;
+}
+
+.Welcome-text p {
+    color: white;
+    margin-left: 20px;
+    font-family: Kanit;
+    font-size: 1.5em;
+}
+
+.disclaimer i {
+    color: red;
+}
+
+.shop_bg {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+    height: 50%;
+}
+
+.img_column {
+    flex-grow: 1;
+}
+
+.row {
+    flex-direction: row;
+    margin: 20px;
+}
+
+.text_row1 {
+    font-size: 30px;
+    margin-left: 10px;
+    height: 10%;
+    flex-grow: 1;
+    align-self: right;
+    color: white;
+    font-family: Kanit;
+}
+
+.text_row2 {
+    margin-left: 10px;
+    height: 50%;
+    flex-grow: 1;
+    align-self: right;
+    color: white;
+    font-family: Kanit;
+}
+
+.img_1 {
+    height: 100px;
+    width: 100px;
+}
+
+.secret a {
+    color: darkslategrey;
+    text-decoration: none;
+    font-family: Kanit;
+    font-size: 5px;
 }
